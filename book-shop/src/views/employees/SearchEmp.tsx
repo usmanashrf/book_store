@@ -10,7 +10,7 @@ export default function SearchEmployee() {
    
     
   return (
-    <div>
+    <div className="bg-gray-200">
         <div>
         <div className="mt-[40px] px-[90px] ">
       
@@ -22,7 +22,7 @@ ID
 </label>
 <input
 className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker mb-3"
-id="email"
+id="id"
 type="text"
 name="id"
 placeholder="Employee ID"

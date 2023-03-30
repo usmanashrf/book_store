@@ -19,7 +19,7 @@ export default function CreateEmployee() {
    
 
   return (
-    <div>
+    <div  className="bg-gray-200">
         <div>
         <div className="mt-[40px] px-[90px] ">
       
@@ -48,7 +48,7 @@ Salary
 className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker"
 id="username"
 type="text"
-placeholder="Customer Name"
+placeholder="Customer Salary"
 name="salary"
 value={salary}
 onChange={(event) => setSalary(event.target.value)}

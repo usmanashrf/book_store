@@ -6,10 +6,10 @@ export default function EmployessList() {
  
     const [employees, setEmployees] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
-  
+
   
   return (
-    <div>
+    <div className="bg-gray-200">
         <table className="min-w-full divide-y divide-gray-200">
   <thead className="bg-gray-50">
     <tr>

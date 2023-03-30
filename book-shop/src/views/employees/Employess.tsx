@@ -1,6 +1,7 @@
 'use client';
 import { useState } from "react";
 import CreateEmployee from "./CreateEmployee";
+import DeleteEmployee from "./DeleteEmp";
 import EmployessList from "./EmployessList";
 import SearchEmployee from "./SearchEmp";
 import UpdateEmployee from "./UpdateEmployee";
@@ -10,6 +11,7 @@ export default function Employess() {
     const [isCEOpen, setIsCEOpen] = useState(false);
     const [isUEOpen, setIsUEOpen] = useState(false);
     const [isSEOpen, setIsSEOpen] = useState(false);
+    const [isDEOpen, setIsDEOpen] = useState(false);
 
     function toggleELAccordion() {
         setIsELOpen((prev) => !prev);
@@ -23,9 +25,12 @@ export default function Employess() {
       function toggleSEAccordion() {
         setIsSEOpen((prev) => !prev);
       }
+      function toggleDEAccordion() {
+        setIsDEOpen((prev) => !prev);
+      }
     
   return (
-    <div className="px-[90px] ">
+    <div className="px-[150px]">
     
     <div className="border border-gray-200 rounded-md mt-[40px] ">
       <div className="border-b border-gray-200">
@@ -84,6 +89,20 @@ export default function Employess() {
       </div>
     </div>
     
+    
+    <div className="border border-gray-200 rounded-md mt-[40px] ">
+      <div className="border-b border-gray-200">
+        <button
+          className="w-full text-left bg-blue-400 px-4 py-2 text-sm font-medium text-white focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+          onClick={toggleDEAccordion}
+        >
+          Delete Employees
+        </button>
+      </div>
+      <div className={`p-4 ${isDEOpen ? "" : "hidden"}`}>
+      <DeleteEmployee/>
+      </div>
+    </div>
     </div>
   )
 }

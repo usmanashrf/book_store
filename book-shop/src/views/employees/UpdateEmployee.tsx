@@ -19,7 +19,7 @@ export default function UpdateEmployee() {
     }
 
   return (
-    <div>
+    <div className="bg-gray-200">
         <div>
         <div className="mt-[40px] px-[90px] ">
       
@@ -31,7 +31,7 @@ ID
 </label>
 <input
 className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker mb-3"
-id="email"
+id="id"
 type="text"
 name="id"
 placeholder="Employee ID"
@@ -47,7 +47,7 @@ Name
 </label>
 <input
 className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker mb-3"
-id="email"
+id="name"
 type="text"
 name="name"
 placeholder="Employee Name"
@@ -62,9 +62,9 @@ Salary
 </label>
 <input
 className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker"
-id="username"
+id="salary"
 type="text"
-placeholder="Customer Name"
+placeholder="Salary"
 name="salary"
 value={salary}
 onChange={(event) => setSalary(event.target.value)}
@@ -77,7 +77,7 @@ Age
 </label>
 <input
 className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker"
-id="username"
+id="age"
 type="text"
 placeholder="age"
 name="age"
